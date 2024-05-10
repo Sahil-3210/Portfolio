@@ -106,7 +106,7 @@ function App() {
                                     CSS3 (SCSS)
                                 </p>
                                 <div className="flex mt-12 gap-2">
-                                    <button className="flex-1 text-sm py-3 bg-gradient-to-t from-blue-500 rounded-full to-cyan-500 hover:from-blue-700 hover:to-cyan-700">
+                                    <button onClick={() => window.open("https://sahil-randive-weather-app.netlify.app/", "_blank")} className="flex-1 text-sm py-3 bg-gradient-to-t from-blue-500 rounded-full to-cyan-500 hover:from-blue-700 hover:to-cyan-700">
                                         Live preview
                                     </button>
                                     <button className="flex-1 text-sm py-3 border rounded-full hover:border-blue-500 hover:text-blue-500">
@@ -124,7 +124,7 @@ function App() {
                                     furniture. HTML5, CSS3 (SCSS)
                                 </p>
                                 <div className="flex gap-2 mt-12">
-                                    <button className="flex-1 text-sm py-3 bg-gradient-to-t from-blue-500 rounded-full to-cyan-500 hover:from-blue-700 hover:to-cyan-700">
+                                    <button onClick={() => window.open("https://sahil-todo.netlify.app/", "_blank")} className="flex-1 text-sm py-3 bg-gradient-to-t from-blue-500 rounded-full to-cyan-500 hover:from-blue-700 hover:to-cyan-700">
                                         Live preview
                                     </button>
                                     <button className="flex-1 text-sm py-3 border rounded-full hover:border-blue-500 hover:text-blue-500">
@@ -144,10 +144,10 @@ function App() {
                                     developer. HTML5, CSS3 (SCSS)
                                 </p>
                                 <div className="flex gap-4 mt-12">
-                                    <button className="flex-1 text-sm py-3 bg-gradient-to-t from-blue-500 rounded-full to-cyan-500 hover:from-blue-700 hover:to-cyan-700">
+                                    <button onClick={() => window.open("https://sahil-currency-converter.netlify.app/", "_blank")} className="flex-1 text-sm py-3 bg-gradient-to-t from-blue-500 rounded-full to-cyan-500 hover:from-blue-700 hover:to-cyan-700">
                                         Live preview
                                     </button>
-                                    <button className="flex-1 text-sm py-3 border rounded-full hover:border-blue-500 hover:text-blue-500">
+                                    <button className="flex-1 text-sm py-3 border rounded-full hover:border-blue-500 hover:text-blue-500 ">
                                         Checkout github
                                     </button>
                                 </div>
@@ -183,7 +183,7 @@ function App() {
                                     developer. HTML5, CSS3 (SCSS)
                                 </p>
                                 <div className="flex gap-4 mt-12">
-                                    <button className="flex-1 text-sm py-3 bg-gradient-to-t from-blue-500 rounded-full to-cyan-500 hover:from-blue-700 hover:to-cyan-700">
+                                    <button onClick={() => window.open("https://sahil-tic-tac-toe-game.netlify.app/", "_blank")} className="flex-1 text-sm py-3 bg-gradient-to-t from-blue-500 rounded-full to-cyan-500 hover:from-blue-700 hover:to-cyan-700">
                                         Live preview
                                     </button>
                                     <button className="flex-1 text-sm py-3 border rounded-full hover:border-blue-500 hover:text-blue-500">
