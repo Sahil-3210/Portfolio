@@ -1,9 +1,5 @@
 import "./App.css";
-import Porfile from "./assets/Photo.png";
-import Project1 from "./assets/project1.png";
-import Project2 from "./assets/project2.png";
-import Project3 from "./assets/project3.png";
-import Project4 from "./assets/project4.png";
+import Porfile from "./assets/lord_img.jpg";
 import Facebook from "./assets/facebook.svg";
 import LinkedIn from "./assets/linkedin.svg";
 import Instagram from "./assets/instagram.svg";
@@ -40,7 +36,7 @@ function App() {
                 <div className="container m-auto px-4 py-6 max-w-4xl bg-black">
                     <div className="flex flex-col gap-4 sm:flex-row justify-between items-center">
                         <div>
-                            <h1 className="font-bold text-2xl">Alex Portfolio</h1>
+                            <h1 className="font-bold text-2xl">Sahil Portfolio</h1>
                         </div>
                         <div>
                             <ul className="flex gap-4">
@@ -71,13 +67,11 @@ function App() {
                         <div>
                             <h2 className="font-bold text-4xl">Hello, I'm Sahil Randive,</h2>
                             <div>
-                                <h2 className="font-bold text-4xl mt-1 gradiant-text">Web developer</h2>
+                                <h2 className="text-white font-bold text-4xl mt-1 gradiant-text">Web developer</h2>
                             </div>
                             <div>
                                 <p className="mt-4 text-gray-400">
-                                    Former digital-marketing specialist, seeking to apply
-                                    competent development skills with focus on collaboration,
-                                    communication, and passion
+                                    lorem ipsum dolor sit amet, consectetur adip
                                 </p>
                                 <button className="px-8 shadow-gray-500 shadow-md py-5 mt-5 bg-gradient-to-t from-blue-500 rounded-full to-cyan-500 hover:from-blue-700 hover:to-cyan-700">
                                     Download resume
@@ -99,14 +93,13 @@ function App() {
                             <div className="border border-gray-500 rounded-md p-5 flex-1">
                                 <img src={Weather} className="w-full h-auto" />
                                 <h3 className="text-2xl font-semibold mt-8">
-                                    Furniture store landing page
+                                lorem ipsum dolor sit amet, consectetur adip
                                 </h3>
                                 <p className="text-gray-400 text-sm mt-2">
-                                    Responsive HTML/CSS layout for online furniture store. HTML5,
-                                    CSS3 (SCSS)
+                                lorem ipsum dolor sit amet, consectetur adip
                                 </p>
                                 <div className="flex mt-12 gap-2">
-                                    <button onClick={() => window.open("https://sahil-randive-weather-app.netlify.app/", "_blank")} className="flex-1 text-sm py-3 bg-gradient-to-t from-blue-500 rounded-full to-cyan-500 hover:from-blue-700 hover:to-cyan-700">
+                                    <button onClick={() => window.open("https://sahil-randive-weather-app.netlify.app/", "_blank")} className="flex-1 text-sm py-3 bg-blue-400 border rounded-full hover:border-blue-500 ">
                                         Live preview
                                     </button>
                                     <button className="flex-1 text-sm py-3 border rounded-full hover:border-blue-500 hover:text-blue-500">
@@ -117,11 +110,10 @@ function App() {
                             <div className="border border-gray-500 rounded-md p-5 flex-1">
                                 <img src={Todo} className="w-full h-auto" />
                                 <h3 className="text-2xl font-semibold mt-8">
-                                    Designer furniture store landing page
+                                lorem ipsum dolor sit amet, consectetur adip
                                 </h3>
                                 <p className="text-gray-400 text-sm mt-2">
-                                    Responsive HTML/CSS layout for online store of designer
-                                    furniture. HTML5, CSS3 (SCSS)
+                                lorem ipsum dolor sit amet, consectetur adip
                                 </p>
                                 <div className="flex gap-2 mt-12">
                                     <button onClick={() => window.open("https://sahil-todo.netlify.app/", "_blank")} className="flex-1 text-sm py-3 bg-gradient-to-t from-blue-500 rounded-full to-cyan-500 hover:from-blue-700 hover:to-cyan-700">
@@ -137,11 +129,10 @@ function App() {
                             <div className="border border-gray-500 rounded-md p-5 flex-1">
                                 <img src={Money} className="w-full h-auto" />
                                 <h3 className="text-2xl font-semibold mt-8">
-                                    Landing page for front-end developer
+                                lorem ipsum dolor sit amet, consectetur adip
                                 </h3>
                                 <p className="text-gray-400 text-sm mt-2">
-                                    Responsive HTML/CSS layout for landing page for front-end
-                                    developer. HTML5, CSS3 (SCSS)
+                                lorem ipsum dolor sit amet, consectetur adip
                                 </p>
                                 <div className="flex gap-4 mt-12">
                                     <button onClick={() => window.open("https://sahil-currency-converter.netlify.app/", "_blank")} className="flex-1 text-sm py-3 bg-gradient-to-t from-blue-500 rounded-full to-cyan-500 hover:from-blue-700 hover:to-cyan-700">
@@ -155,11 +146,10 @@ function App() {
                             <div className="border border-gray-500 rounded-md p-5 flex-1">
                                 <img src={RandomQ} className="w-full h-auto" />
                                 <h3 className="text-2xl font-semibold mt-8">
-                                    Website redesign for The Venus project
+                                lorem ipsum dolor sit amet, consectetur adip
                                 </h3>
                                 <p className="text-gray-400 text-sm mt-2">
-                                    Responsive HTML/CSS layout for The Venus project. HTML5, CSS3
-                                    (SCSS)
+                                lorem ipsum dolor sit amet, consectetur adip
                                 </p>
                                 <div className="flex gap-2 mt-12">
                                     <button onClick={() => window.open("https://sahil-quote-generator.netlify.app/", "_blank")} className="flex-1 text-sm py-3 bg-gradient-to-t from-blue-500 rounded-full to-cyan-500 hover:from-blue-700 hover:to-cyan-700">
@@ -176,11 +166,10 @@ function App() {
                             <div className="border border-gray-500 rounded-md p-5 flex-1">
                                 <img src={Game} className="w-full h-auto" />
                                 <h3 className="text-2xl font-semibold mt-8">
-                                    Landing page for front-end developer
+                                lorem ipsum dolor sit amet, consectetur adip
                                 </h3>
                                 <p className="text-gray-400 text-sm mt-2">
-                                    Responsive HTML/CSS layout for landing page for front-end
-                                    developer. HTML5, CSS3 (SCSS)
+                                lorem ipsum dolor sit amet, consectetur adip
                                 </p>
                                 <div className="flex gap-4 mt-12">
                                     <button onClick={() => window.open("https://sahil-tic-tac-toe-game.netlify.app/", "_blank")} className="flex-1 text-sm py-3 bg-gradient-to-t from-blue-500 rounded-full to-cyan-500 hover:from-blue-700 hover:to-cyan-700">
@@ -194,11 +183,10 @@ function App() {
                             <div className="border border-gray-500 rounded-md p-5 flex-1">
                                 <img src={News} className="w-full h-auto" />
                                 <h3 className="text-2xl font-semibold mt-8">
-                                    Website redesign for The Venus project
+                                lorem ipsum dolor sit amet, consectetur adip
                                 </h3>
                                 <p className="text-gray-400 text-sm mt-2">
-                                    Responsive HTML/CSS layout for The Venus project. HTML5, CSS3
-                                    (SCSS)
+                                lorem ipsum dolor sit amet, consectetur adip
                                 </p>
                                 <div className="flex gap-2 mt-12">
                                     <button className="flex-1 text-sm py-3 bg-gradient-to-t from-blue-500 rounded-full to-cyan-500 hover:from-blue-700 hover:to-cyan-700">
@@ -226,7 +214,7 @@ function App() {
                             </div>
                             <div className="mt-8">
                                 <div className="flex justify-between items-center">
-                                    <h2 className="font-semibold">CSS, Sass & Bootstrap</h2>
+                                    <h2 className="font-semibold">CSS & Bootstrap</h2>
                                     <p className="text-gray-500">Advanced</p>
                                 </div>
                                 <span className="w-full h-2 mt-2 bg-gradient-to-t from-blue-500 to-cyan-500 block rounded-md" />
@@ -234,7 +222,7 @@ function App() {
                             <div className="mt-8">
                                 <div className="flex justify-between items-center">
                                     <h2 className="font-semibold">
-                                        JavaScript, TypeScript, JQuery
+                                        JavaScript, TypeScript
                                     </h2>
                                     <p className="text-gray-500">Advanced</p>
                                 </div>
@@ -249,7 +237,7 @@ function App() {
                             </div>
                             <div className="mt-8">
                                 <div className="flex justify-between items-center">
-                                    <h2 className="font-semibold">Angular</h2>
+                                    <h2 className="font-semibold">Java</h2>
                                     <p className="text-gray-500">Advanced</p>
                                 </div>
                                 <span className="w-[50%] h-2 mt-2 bg-gradient-to-t from-blue-500 to-cyan-500 block rounded-md" />
@@ -263,7 +251,7 @@ function App() {
                             </div>
                             <div className="mt-8">
                                 <div className="flex justify-between items-center">
-                                    <h2 className="font-semibold">React Native</h2>
+                                    <h2 className="font-semibold">Node</h2>
                                     <p className="text-gray-500">Advanced</p>
                                 </div>
                                 <span className="w-[45%] h-2 mt-2 bg-gradient-to-t from-blue-500 to-cyan-500 block rounded-md" />
@@ -272,6 +260,56 @@ function App() {
                     </div>
                 </section>
                 {/* Additional skills section */}
+                <section>
+                    <div className="container-lg">
+                        <div className="flex flex-col md:flex-row w-full p-8 rounded-lg section-card">
+                            <div className="flex flex-1 flex-col sm:gap-y-6 gap-y-4">
+                                <div className="max-w-lg text-label heading-text text-2xl font-semibold">
+                                    <h1>Contact Me</h1>
+                                </div>
+                                <div className="max-w-lg w-3/ text-label body-text">
+                                    <p>Let's chat about your ambitions, and we'll craft a killer portfolio that will blow minds and open doors you never knew existed.</p>
+                                </div>
+                            </div>
+                            <div className="grid grid-cols-1 flex-1">
+                                <form>
+                                    <div className="row gx-2 gy-2">
+                                        <div className="col-xl-12 col-md-12 col-sm-12">
+                                            <div>
+                                                <label className="block text-sm font-semibold leading-6 body-text">Email</label>
+                                                <div className="mt-2.5">
+                                                    <input type="email" className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"></input>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <label className="mt-2.5 block text-sm font-semibold leading-6 body-text">First Name</label>
+                                                <div className="mt-2.5">
+                                                    <input type="email" className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"></input>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <label className="mt-2.5 block text-sm font-semibold leading-6 body-text">Last Name</label>
+                                                <div className="mt-2.5">
+                                                    <input type="email" className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"></input>
+                                                </div>
+                                            </div>
+                                            <div className="mb-5">
+                                                <label className="mt-2.5 block text-sm font-semibold leading-6 body-text">Last Name</label>
+                                                <div className="mt-2.5">
+                                                    <textarea className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" rows="7" placeholder="Enter your message">    
+                                                    </textarea>
+                                                </div>
+                                            </div>
+                                            <div className="flex items-end col-xl-12 col-md-12 col-sm-12">
+                                                <button type="submit" className="py-2.5 px-5 me-2 mb-2 text-sm font-medium rounded-full text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 hover:border-blue-500 hover:text-blue-500 sm:text-sm sm:leading-6" style={{margin: "0px"}}>Request Demo</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </section>
 
             </main>
             <footer>
