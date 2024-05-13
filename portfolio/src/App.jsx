@@ -36,7 +36,7 @@ function App() {
                 <div className="container m-auto px-4 py-6 max-w-4xl bg-black">
                     <div className="flex flex-col gap-4 sm:flex-row justify-between items-center">
                         <div>
-                            <h1 className="font-bold text-2xl">Sahil Portfolio</h1>
+                            <h1 className="font-bold text-2xl">Portfolio</h1>
                         </div>
                         <div>
                             <ul className="flex gap-7">
@@ -47,7 +47,7 @@ function App() {
                                 </li>
                                 <li>
                                     <a href="#technologies" className="text-gray-400 hover:text-white cursor-pointer">
-                                        Technologies
+                                        Tech
                                     </a>
                                 </li>
                                 <li>
@@ -60,12 +60,12 @@ function App() {
                     </div>
                 </div>
             </header>
-            <main className="relative mt-28">
+            <main className="relative">
                 {/* Intro/Banner section */}
-                <section>
+                <section id="home" className="h-screen flex items-center justify-center">
                     <div className="container m-auto px-4 pt-12 pb-12 sm:pt-20 flex flex-col sm:flex-row gap-6 text-center sm:text-left">
-                        <div>
-                            <h2 className="font-bold text-4xl">Hello, I'm Sahil Randive,</h2>
+                        <div className="flex-1">
+                            <h2 className="font-bold text-4xl mt-20">Hello, I'm Sahil Randive,</h2>
                             <div>
                                 <h2 className="text-white font-bold text-4xl mt-1 gradiant-text">Web developer</h2>
                             </div>
@@ -73,14 +73,14 @@ function App() {
                                 <p className="mt-4 text-gray-400">
                                     lorem ipsum dolor sit amet, consectetur adip
                                 </p>
-                                <button className="px-8 shadow-gray-500 shadow-md py-5 mt-5 bg-gradient-to-t from-blue-500 rounded-full to-cyan-500 hover:from-blue-700 hover:to-cyan-700">
-                                    Download resume
+                                <button className="px-8 shadow-gray-500 shadow-md py-5 mt-5 bg-gradient-to-t border rounded-full">
+                                    Download Resume
                                 </button>
                             </div>
                         </div>
                         <div className="relative">
                             <div >
-                                <img src={Porfile} className="relative z-10 w-[300px] m-auto sm:w-[800px]" />
+                                <img src={Porfile} className="relative z-10 w-[200px] m-auto sm:w-[300px] rounded-full" />
                             </div>
                         </div>
                     </div>
@@ -260,7 +260,7 @@ function App() {
                     </div>
                 </section>
                 {/* Additional skills section */}
-                <section id="contact me">
+                <section id="contact me" className="container-lg">
                     <div className="container-lg">
                         <div className="flex flex-col md:flex-row w-full p-8 rounded-lg section-card">
                             <div className="flex flex-1 flex-col sm:gap-y-6 gap-y-4">
@@ -268,9 +268,9 @@ function App() {
                                     <h1>Contact Me</h1>
                                 </div>
                                 <div className="max-w-lg w-3/ text-label body-text">
-                                    <p className="mb-6">Feel free to reach out using the contact form below. Simply fill in your name, email address, and message, and I'll get back to you as soon as possible.</p>
+                                    <p className="mb-6 max-w-60">Feel free to reach out using the contact form below. Simply fill in your name, email address, and message, and I'll get back to you as soon as possible.</p>
                                     <p className="underline">Below is my Mail-id:</p>
-                                    <p>randivesahil7@gmail.com</p>
+                                    <p className="mt-1 mb-5">randivesahil7@gmail.com</p>
 
                                 </div>
                             </div>
@@ -341,15 +341,6 @@ function App() {
                     </div>
                 </div>
             </footer>
-            {
-                scrolling && (
-                    <button className="fixed block right-8 bottom-0 w-24" onClick={() => {
-                        window.scrollTo(0, 0);
-                    }}>
-                        <img src={ArrowDown} />
-                    </button>
-                )
-            }
         </div>
     );
 }
