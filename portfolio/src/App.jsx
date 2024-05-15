@@ -3,7 +3,6 @@ import Porfile from "./assets/lord_img.jpg";
 import Facebook from "./assets/facebook.svg";
 import LinkedIn from "./assets/linkedin.svg";
 import Instagram from "./assets/instagram.svg";
-import ArrowDown from "./assets/arrow-down.svg";
 import Todo from "./assets/todo.png";
 import Weather from "./assets/weather.png";
 import RandomQ from "./assets/randomQ.png";
@@ -11,6 +10,8 @@ import Money from "./assets/money_converter.png";
 import Game from "./assets/game.png";
 import News from "./assets/news.png";
 import { useEffect, useState } from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub, faTwitter} from '@fortawesome/free-brands-svg-icons';
 
 function App() {
     const [scrolling, setScrolling] = useState(false);
@@ -65,15 +66,15 @@ function App() {
                 <section id="home" className="h-screen flex items-center justify-center">
                     <div className="container m-auto px-4 pt-12 pb-12 sm:pt-20 flex flex-col sm:flex-row gap-6 text-center sm:text-left">
                         <div className="flex-1">
-                            <h2 className="font-bold text-4xl mt-20">Hello, I'm Sahil Randive,</h2>
+                            <h2 className="font-medium text-3xl mt-20">Hello, I'm Sahil Randive,</h2>
                             <div>
-                                <h2 className="text-white font-bold text-4xl mt-1 gradiant-text">Web developer</h2>
+                                <h2 className="text-blue-400 font-bold text-4xl mt-1 gradiant-text">Web developer</h2>
                             </div>
                             <div>
                                 <p className="mt-4 text-gray-400">
-                                    lorem ipsum dolor sit amet, consectetur adip
+                                Hello there! 👋 I'm a passionate and enthusiastic web developer with a keen interest in crafting responsive and user-friendly websites. 
                                 </p>
-                                <button className="px-8 shadow-gray-500 shadow-md py-5 mt-5 bg-gradient-to-t border rounded-full">
+                                <button className="px-8 shadow-gray-500 shadow-md py-5 mt-5 bg-gradient-to-t border rounded-full  hover:text-blue-500  focus:ring-indigo-600 hover:border-blue-500">
                                     Download Resume
                                 </button>
                             </div>
@@ -99,10 +100,10 @@ function App() {
                                 Experience real-time weather updates at your fingertips, all presented in a visually stunning and easy-to-navigate interface.
                                 </p>
                                 <div className="flex mt-12 gap-2">
-                                    <button onClick={() => window.open("https://sahil-randive-weather-app.netlify.app/", "_blank")} className="flex-1 text-sm py-3 bg-blue-400 border rounded-full hover:border-blue-500 ">
+                                    <button onClick={() => window.open("https://sahil-randive-weather-app.netlify.app/", "_blank")} className="flex-1 text-sm py-3 border rounded-full hover:border-blue-500 hover:text-blue-500">
                                         Live preview
                                     </button>
-                                    <button className="flex-1 text-sm py-3 border rounded-full hover:border-blue-500 hover:text-blue-500">
+                                    <button onClick={()=>window.open("https://github.com/Sahil-3210/Weather-App", "_blank")} className="flex-1 text-sm py-3 border rounded-full hover:border-blue-500 hover:text-blue-500">
                                         Checkout github
                                     </button>
                                 </div>
@@ -116,10 +117,10 @@ function App() {
                                 Boost your productivity with my sleek and intuitive todo list app powered by React.js. Organize your tasks effortlessly and stay on top of your priorities with a seamless user experience designed for maximum efficiency.
                                 </p>
                                 <div className="flex gap-2 mt-12">
-                                    <button onClick={() => window.open("https://sahil-todo.netlify.app/", "_blank")} className="flex-1 text-sm py-3 bg-blue-400 border rounded-full hover:border-blue-500 ">
+                                    <button onClick={() => window.open("https://sahil-todo.netlify.app/", "_blank")} className="flex-1 text-sm py-3 border rounded-full hover:border-blue-500 hover:text-blue-500 ">
                                         Live preview
                                     </button>
-                                    <button className="flex-1 text-sm py-3 border rounded-full hover:border-blue-500 hover:text-blue-500">
+                                    <button onClick={()=> window.open("https://github.com/Sahil-3210/Todo")} className="flex-1 text-sm py-3 border rounded-full hover:border-blue-500 hover:text-blue-500">
                                         Checkout github
                                     </button>
                                 </div>
@@ -135,10 +136,10 @@ function App() {
                                 Explore global currencies effortlessly with my React.js-powered currency converter. Seamlessly convert between different currencies with just a few clicks, all within a modern and user-friendly interface.
                                 </p>
                                 <div className="flex gap-4 mt-12">
-                                    <button onClick={() => window.open("https://sahil-currency-converter.netlify.app/", "_blank")} className="flex-1 text-sm py-3 bg-blue-400 border rounded-full hover:border-blue-500 ">
+                                    <button onClick={() => window.open("https://sahil-currency-converter.netlify.app/", "_blank")} className="flex-1 text-sm py-3 border rounded-full hover:border-blue-500 hover:text-blue-500">
                                         Live preview
                                     </button>
-                                    <button className="flex-1 text-sm py-3 border rounded-full hover:border-blue-500 hover:text-blue-500 ">
+                                    <button onClick={()=> window.open("https://github.com/Sahil-3210/Currency-Converter-React")} className="flex-1 text-sm py-3 border rounded-full hover:border-blue-500 hover:text-blue-500 ">
                                         Checkout github
                                     </button>
                                 </div>
@@ -152,10 +153,10 @@ function App() {
                                 Elevate your day with inspiring words from my dynamic quote generator, crafted with React.js. Immerse yourself in a collection of thought-provoking quotes that uplift, motivate, and spark creativity.
                                 </p>
                                 <div className="flex gap-2 mt-12">
-                                    <button onClick={() => window.open("https://sahil-quote-generator.netlify.app/", "_blank")} className="flex-1 text-sm py-3 bg-blue-400 border rounded-full hover:border-blue-500 ">
+                                    <button onClick={() => window.open("https://sahil-quote-generator.netlify.app/", "_blank")} className="flex-1 text-sm py-3 border rounded-full hover:border-blue-500 hover:text-blue-500 ">
                                         Live preview
                                     </button>
-                                    <button className="flex-1 text-sm py-3 border rounded-full hover:border-blue-500 hover:text-blue-500">
+                                    <button onClick={()=> window.open("https://github.com/Sahil-3210/Quote_Generator", "_blank")} className="flex-1 text-sm py-3 border rounded-full hover:border-blue-500 hover:text-blue-500">
                                         Checkout github
                                     </button>
                                 </div>
@@ -172,10 +173,10 @@ function App() {
                                 Dive into a classic game of strategy and fun with my Tic Tac Toe game, meticulously crafted using HTML, CSS, and JavaScript. Challenge your friends or test your skills in this timeless battle of X's and O's.
                                 </p>
                                 <div className="flex gap-4 mt-12">
-                                    <button onClick={() => window.open("https://sahil-tic-tac-toe-game.netlify.app/", "_blank")} className="flex-1 text-sm py-3 bg-blue-400 border rounded-full hover:border-blue-500 ">
+                                    <button onClick={() => window.open("https://sahil-tic-tac-toe-game.netlify.app/", "_blank")} className="flex-1 text-sm py-3 border rounded-full hover:border-blue-500 hover:text-blue-500">
                                         Live preview
                                     </button>
-                                    <button className="flex-1 text-sm py-3 border rounded-full hover:border-blue-500 hover:text-blue-500">
+                                    <button onClick={()=> window.open("https://github.com/Sahil-3210/Tic-Tac-Toe-Game", "_blank")} className="flex-1 text-sm py-3 border rounded-full hover:border-blue-500 hover:text-blue-500">
                                         Checkout github
                                     </button>
                                 </div>
@@ -189,10 +190,10 @@ function App() {
                                 Stay informed and up-to-date with my cutting-edge real-time news app. Harnessing the latest technologies, our app delivers breaking news and updates as they happen, straight to your fingertips.
                                 </p>
                                 <div className="flex gap-2 mt-12">
-                                    <button className="flex-1 text-sm py-3 bg-blue-400 border rounded-full hover:border-blue-500 ">
+                                    <button className="flex-1 text-sm py-3 border rounded-full hover:border-blue-500 hover:text-blue-500 ">
                                         Live preview
                                     </button>
-                                    <button className="flex-1 text-sm py-3 border rounded-full hover:border-blue-500 hover:text-blue-500">
+                                    <button onClick={() => window.open("https://github.com/Sahil-3210/NewsPedia", "_blank")} className="flex-1 text-sm py-3 border rounded-full hover:border-blue-500 hover:text-blue-500">
                                         Checkout github
                                     </button>
                                 </div>
@@ -269,7 +270,7 @@ function App() {
                                 </div>
                                 <div className="max-w-lg w-3/ text-label body-text">
                                     <p className="mb-6 max-w-60">Feel free to reach out using the contact form below. Simply fill in your name, email address, and message, and I'll get back to you as soon as possible.</p>
-                                    <p className="underline">Below is my Mail-id:</p>
+                                    <p className="text-2xl">Below is my Mail-id:</p>
                                     <p className="mt-1 mb-5">randivesahil7@gmail.com</p>
 
                                 </div>
@@ -281,19 +282,19 @@ function App() {
                                             <div>
                                                 <label className="block text-sm font-semibold leading-6 body-text">Email</label>
                                                 <div className="mt-2.5">
-                                                    <input type="email" className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"></input>
+                                                    <input type="email" className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" placeholder="Enter your email"></input>
                                                 </div>
                                             </div>
                                             <div>
                                                 <label className="mt-2.5 block text-sm font-semibold leading-6 body-text">First Name</label>
                                                 <div className="mt-2.5">
-                                                    <input type="email" className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"></input>
+                                                    <input type="email" className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" placeholder="Enter your first name"></input>
                                                 </div>
                                             </div>
                                             <div>
                                                 <label className="mt-2.5 block text-sm font-semibold leading-6 body-text">Last Name</label>
                                                 <div className="mt-2.5">
-                                                    <input type="email" className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"></input>
+                                                    <input type="email" className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" placeholder="Enter your last name"></input>
                                                 </div>
                                             </div>
                                             <div className="mb-5">
@@ -304,7 +305,7 @@ function App() {
                                                 </div>
                                             </div>
                                             <div className="flex items-end col-xl-12 col-md-12 col-sm-12">
-                                                <button type="submit" className="py-2.5 px-5 me-2 mb-2 text-sm font-medium rounded-full text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 hover:border-blue-500 hover:text-blue-500 sm:text-sm sm:leading-6" style={{margin: "0px"}}>Request Demo</button>
+                                                <button type="submit" className="py-2.5 px-5 me-2 mb-2 text-sm font-medium rounded-fullflex-1 text-sm py-3 border rounded-full hover:border-blue-500 hover:text-blue-500" style={{margin: "0px"}}>Send</button>
                                             </div>
                                         </div>
                                     </div>
@@ -317,24 +318,24 @@ function App() {
             </main>
             <footer>
                 <div className="container m-auto flex justify-between px-4 py-6">
-                    <div>
+                    {/* <div>
                         <p className="text-gray-300 text-sm">Copyright @ 2023</p>
-                    </div>
-                    <div>
-                        <ul className="flex gap-4">
+                    </div> */}
+                    <div className="container m-auto flex justify-center px-4 py-6">
+                        <ul className="flex gap-5">
                             <li>
                                 <a>
-                                    <img src={Facebook} className="w-5" />
+                                   <FontAwesomeIcon icon={faGithub} className="w-5" style={{ fontSize: "20px" }} onClick={()=>window.open("https://github.com/Sahil-3210","_blank")}/>
                                 </a>
                             </li>
                             <li>
                                 <a>
-                                    <img src={LinkedIn} className="w-5" />
+                                    <img src={LinkedIn} className="w-5"  style={{ fontSize: "20px" }} onClick={()=>window.open("https://www.linkedin.com/in/sahil-randive-5a9260240/","_blank")} />
                                 </a>
                             </li>
                             <li>
                                 <a>
-                                    <img src={Instagram} className="w-5" />
+                                <FontAwesomeIcon icon={faTwitter} className="w-5" style={{ fontSize: "20px" }} onClick={()=>window.open("https://twitter.com/SahilRandive3","_blank")}/>
                                 </a>
                             </li>
                         </ul>
