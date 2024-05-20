@@ -31,6 +31,21 @@ function App() {
         }
     }, [])
 
+    const handleDownload = () => {
+        // Create a dummy anchor element
+        const googleDriveLink = 'https://drive.google.com/file/d/1Bc4A7YiKHu_uMlx-x5jaMQ00EBR8tCzL/view?usp=sharing';
+
+        // Create a temporary link element
+        const link = document.createElement('a');
+        link.href = googleDriveLink;
+        link.setAttribute('target', '_blank'); // Open the link in a new tab
+        link.setAttribute('rel', 'noopener noreferrer'); // Security best practice
+        link.setAttribute('download', 'resume.pdf'); // Set the suggested file name
+      
+        // Programmatically click the link to open the file in a new tab
+        link.click();
+      };
+
     return (
         <div className="max-w-4xl m-auto relative">
             <header className={`${scrolling ? 'border-b border-gray-900' : ''}  fixed left-0 right-0 top-0 z-20`} id="home">
@@ -74,8 +89,8 @@ function App() {
                                 <p className="mt-4 text-gray-400">
                                 Hello there! 👋 I'm a passionate and enthusiastic web developer with a keen interest in crafting responsive and user-friendly websites. 
                                 </p>
-                                <button className="px-8 shadow-gray-500 shadow-md py-5 mt-5 bg-gradient-to-t border rounded-full  hover:text-blue-500  focus:ring-indigo-600 hover:border-blue-500">
-                                    Download Resume
+                                <button onClick={handleDownload} className="px-8 shadow-gray-500 shadow-md py-5 mt-5 bg-gradient-to-t border rounded-full  hover:text-blue-500  focus:ring-indigo-600 hover:border-blue-500">
+                                    View Resume
                                 </button>
                             </div>
                         </div>
@@ -205,59 +220,22 @@ function App() {
                 <section className="py-10" id="technologies">
                     <div className="container m-auto px-4">
                         <h2 className="text-2xl font-semibold">Technologies</h2>
-                        <div className="mt-14">
-                            <div>
-                                <div className="flex justify-between items-center">
-                                    <h2 className="font-semibold">HTML</h2>
-                                    <p className="text-gray-500">Advanced</p>
-                                </div>
-                                <span className="w-full h-2 mt-2 bg-gradient-to-t from-blue-500 to-cyan-500 block rounded-md" />
-                            </div>
-                            <div className="mt-8">
-                                <div className="flex justify-between items-center">
-                                    <h2 className="font-semibold">CSS & Bootstrap</h2>
-                                    <p className="text-gray-500">Advanced</p>
-                                </div>
-                                <span className="w-full h-2 mt-2 bg-gradient-to-t from-blue-500 to-cyan-500 block rounded-md" />
-                            </div>
-                            <div className="mt-8">
-                                <div className="flex justify-between items-center">
-                                    <h2 className="font-semibold">
-                                        JavaScript, TypeScript
-                                    </h2>
-                                    <p className="text-gray-500">Advanced</p>
-                                </div>
-                                <span className="w-full h-2 mt-2 bg-gradient-to-t from-blue-500 to-cyan-500 block rounded-md" />
-                            </div>
-                            <div className="mt-8">
-                                <div className="flex justify-between items-center">
-                                    <h2 className="font-semibold">UI design in Figma</h2>
-                                    <p className="text-gray-500">Advanced</p>
-                                </div>
-                                <span className="w-[75%] h-2 mt-2 bg-gradient-to-t from-blue-500 to-cyan-500 block rounded-md" />
-                            </div>
-                            <div className="mt-8">
-                                <div className="flex justify-between items-center">
-                                    <h2 className="font-semibold">Java</h2>
-                                    <p className="text-gray-500">Advanced</p>
-                                </div>
-                                <span className="w-[50%] h-2 mt-2 bg-gradient-to-t from-blue-500 to-cyan-500 block rounded-md" />
-                            </div>
-                            <div className="mt-8">
-                                <div className="flex justify-between items-center">
-                                    <h2 className="font-semibold">React</h2>
-                                    <p className="text-gray-500">Advanced</p>
-                                </div>
-                                <span className="w-[90%] h-2 mt-2 bg-gradient-to-t from-blue-500 to-cyan-500 block rounded-md" />
-                            </div>
-                            <div className="mt-8">
-                                <div className="flex justify-between items-center">
-                                    <h2 className="font-semibold">Node</h2>
-                                    <p className="text-gray-500">Advanced</p>
-                                </div>
-                                <span className="w-[45%] h-2 mt-2 bg-gradient-to-t from-blue-500 to-cyan-500 block rounded-md" />
-                            </div>
+                        <div className="mt-12">
+                            <h2 className="text-2xl font-semibold mb-3">I am familer with these technologies</h2>
+                            <h2 className="text-xl font-bold" >Frontend:- </h2> 
+                            <p className="text-base mb-2">HTML,CSS,JavaScript,Typescript</p>
+                            <h2 className="text-xl font-bold" >Frameworks and Libraries:- </h2>
+                            <p className="text-base mb-2">React.js, Angular.js</p>
+                            <h2 className="text-xl font-bold" >Backend:- </h2>
+                            <p className="text-base mb-2">Node.js, Express.js, Java, Java(Spring Boot)</p>
+                            <h2 className="text-xl font-bold" >Database:- </h2>
+                            <p className="text-base mb-2">MySQL, MongoDB(Basics)</p>
+                            <h2 className="text-xl font-bold" >Cloud:- </h2>
+                            <p className="text-base mb-2">AWS(Basics)</p>
+                            <h2 className="text-xl font-bold" >Other Technologies:- </h2>
+                            <p className="text-base mb-2"> Git, Github, Bootstrap, Tailwind, Python, C#</p>
                         </div>
+                            
                     </div>
                 </section>
                 {/* Additional skills section */}
